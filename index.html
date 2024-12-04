@@ -1,29 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabriventanas: Sitio en Construcción</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="d-flex flex-column justify-content-center align-items-center min-vh-100 bg-light">
-        <div class="text-center">
-            <img src="assests/img/logo.jpg" alt="Logo del sitio" class="mb-4" width="220">
-            <h1 class="display-4 text-primary">Estamos trabajando en algo increíble</h1>
-            <p class="lead text-secondary">Nuestro sitio estará disponible pronto. ¡Gracias por tu paciencia!</p>
-            <div class="mt-4">
-                <a href="https://api.whatsapp.com/send?phone=50237545028&text=Hola%2C%20Fabriventanas%0A%0ANecesito%20m%C3%A1s%20informaci%C3%B3n." class="btn btn-primary btn-lg me-2">Contáctanos</a>
-                <!-- <a href="#" class="btn btn-outline-secondary btn-lg">Suscríbete</a> -->
-            </div>
-        </div>
-        <footer class="text-center text-secondary mt-4">
-            <p>&copy; 2024 Fabriventanas. Todos los derechos reservados. Diseño y desarrollo por <a href="https://oscarleon.app/">OSCARLEON</a></p>
-        </footer>
-    </div>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <link
+      href="assets/libs/prismjs/themes/prism-okaidia.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css" />
+
+    <!-- Color modes -->
+    <script src="assets/js/vendors/color-modes.js"></script>
+
+    <!-- Libs CSS -->
+    <link
+      href="assets/libs/simplebar/dist/simplebar.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/libs/bootstrap-icons/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Scroll Cue -->
+    <link rel="stylesheet" href="assets/libs/scrollcue/scrollCue.css" />
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="assets/fonts/css/boxicons.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <title>Fabriventanas</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg  navbar-light w-100 transparent navbar-clone fixed navbar-unstick">
+        <div class="container px-3">
+           <a class="navbar-brand" href="index.html"><img src="#!" alt="">FABRIVENTANAS</a>
+           <button class="navbar-toggler offcanvas-nav-btn" type="button">
+              <i class="bi bi-list"></i>
+           </button>
+           <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+              <div class="offcanvas-header">
+                 <a href="index.html" class="text-inverse"><img src="#!" alt=""></a>
+                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body pt-0 align-items-center">
+                 <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Opciones</a>
+                       <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="index.html">Opción 1</a></li>
+                       </ul>
+                    </li>
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipos de Ventanas</a>
+                       <div class="dropdown-menu p-4">
+                          <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-1 gx-lg-4">
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/hero.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/hero-snippets-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>1</span>
+                                </a>
+                             </div>
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/navbar.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/header-snippets-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>2</span>
+                                </a>
+                             </div>
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/about.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/about-snippets-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>3</span>
+                                </a>
+                             </div>
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/blog.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/blog-snippets-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>4</span>
+                                </a>
+                             </div>
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/carousel.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/carousel-snippets-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>5</span>
+                                </a>
+                             </div>
+                             <div class="col">
+                                <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/case-study.html">
+                                   <div class="rounded d-none d-lg-block mb-lg-2">
+                                      <img class="w-100 rounded-2" src="assets/images/block/case-study-bootstrap.svg" alt="">
+                                   </div>
+                                   <span>6</span>
+                                </a>
+                             </div>
+                          </div>
+                       </div>
+                    </li>
+                 </ul>
+                 <div class="mt-3 mt-lg-0 d-flex align-items-center">
+                    <a href="signup.html" class="btn btn-primary">Contactar</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </nav>
+     <header>
+        <nav class="navbar navbar-expand-lg  navbar-light w-100 transparent">
+            <div class="container px-3">
+                <a class="navbar-brand" href="index.html"><img src="#!" alt="">FABRIVENTANAS</a>
+                <button class="navbar-toggler offcanvas-nav-btn" type="button">
+                   <i class="bi bi-list"></i>
+                </button>
+                <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+                   <div class="offcanvas-header">
+                      <a href="index.html" class="text-inverse"><img src="#!" alt=""></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body pt-0 align-items-center">
+                      <ul class="navbar-nav mx-auto align-items-lg-center">
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Opciones</a>
+                            <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="index.html">Opción 1</a></li>
+                            </ul>
+                         </li>
+                         <li class="nav-item dropdown dropdown-fullwidth">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipos de Ventanas</a>
+                            <div class="dropdown-menu p-4">
+                               <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-1 gx-lg-4">
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/hero.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/hero-snippets-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>1</span>
+                                     </a>
+                                  </div>
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/navbar.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/header-snippets-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>2</span>
+                                     </a>
+                                  </div>
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/about.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/about-snippets-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>3</span>
+                                     </a>
+                                  </div>
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/blog.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/blog-snippets-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>4</span>
+                                     </a>
+                                  </div>
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/carousel.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/carousel-snippets-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>5</span>
+                                     </a>
+                                  </div>
+                                  <div class="col">
+                                     <a class="dropdown-item d-block px-0 mb-lg-3" href="blocks/case-study.html">
+                                        <div class="rounded d-none d-lg-block mb-lg-2">
+                                           <img class="w-100 rounded-2" src="assets/images/block/case-study-bootstrap.svg" alt="">
+                                        </div>
+                                        <span>6</span>
+                                     </a>
+                                  </div>
+                               </div>
+                            </div>
+                         </li>
+                      </ul>
+                      <div class="mt-3 mt-lg-0 d-flex align-items-center">
+                         <a href="signup.html" class="btn btn-primary">Contactar</a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+        </nav>
+     </header>
+
+    <main>
+        <section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+            <div class="container">
+               <div class="row align-items-center py-lg-8">
+                  <div class="col-md-6 col-12">
+                     <div class="text-center text-md-start">
+                        <div class="mb-6 pe-xl-8">
+                           <h1 class="display-1">Fabriventanas</h1>
+                           <p class="lead">Expertos en soluciones de PVC, Aluminio y Vidrio Templado</p>
+                           <ul>
+                              <li>Calidad superior: Productos diseñados para resistir el paso del tiempo.</li>
+                              <li>Servicio confiable: Atención profesional y puntual en cada proyecto.</li>
+                              <li>Innovación constante: Incorporamos las últimas tendencias en diseño y tecnología.</li>
+                           </ul>
+                        </div>
+                        <div class="mb-7">
+                           <div class="mb-3">
+                              <a href="#!" class="btn btn-primary me-2">¡Contáctanos hoy mismo!</a>
+                           </div>
+                           <small>Recibe asesoramiento personalizado y descubre por qué somos la mejor opción en puertas, ventanas y soluciones de vidrio.</small>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row align-items-center gap-2">
+                           <div class="text-dark mb-0 fs-6 lh-1 d-flex align-items-center">
+                              <!-- <span>Excellent</span> -->
+                              <!-- <span class="mx-1">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                 </svg>
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                                 </svg>
+                              </span> -->
+                           </div>
+                           <!-- <div class="mt-2 mt-lg-0"><span>(Based on 57App reviews)</span></div> -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-12 position-md-absolute top-0 end-0 left-0 h-100 mt-6 mt-md-0 px-0" style="background-image: url(assets/images/farbiventanas/1.jpg); background-size: cover; background-position: center">
+                     <div class="d-block d-md-none">
+                        <figure class="figure">
+                           <img src="assets/images/farbiventanas/1.jpg" alt="" class="img-fluid">
+                        </figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+    </main>
+
+    <div class="btn-scroll-top">
+      <svg
+        class="progress-square svg-content"
+        width="100%"
+        height="100%"
+        viewBox="0 0 40 40"
+      >
+        <path
+          d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"
+        />
+      </svg>
+    </div>
+    <!-- Libs JS -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="assets/libs/headhesive/dist/headhesive.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+    <script src="assets/libs/prismjs/prism.js"></script>
+    <script src="assets/libs/prismjs/components/prism-scss.min.js"></script>
+    <script src="assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper.js"></script>
+  </body>
 </html>
